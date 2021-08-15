@@ -168,7 +168,7 @@ For geodetic coordinates, X is longitude and Y is latitude
 | contact_data   | jsonb       |              | Passenger contact information|
 
 <!-- GETTING STARTED -->
-## Fact and Dimensional tables.<a name="Fact_and_Dimensional_tables"></a>
+## Fact and Dimensional tables. <a name="Fact_and_Dimensional_tables"></a>
 The following entity-relationship diagram shows a star schema optimized for queries created using the flight booking database. 
 ![](images/fact_dim.jpg)
 
