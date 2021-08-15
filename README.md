@@ -1,11 +1,13 @@
 
 
+
+
 ![GitHub contributors](https://img.shields.io/github/contributors/saboye/Data-Modeling-with-Postgres?color=blue&logo=github&style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/saboye/Data-Modeling-with-Postgres?logo=github&style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues-raw/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white?)
+
 
 <!-- PROJECT LOGO -->
 <br />
