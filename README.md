@@ -34,7 +34,7 @@
 
 # Table of contents
 1. [About The Project](#About_The_Project)
-2. [List of Tables](#List_of_Tables)
+2. [List of DB Tables](#List_of_Tables)
 3. [Metadata](#Metadata)
 4. [Fact and Dimensional tables](#Fact_and_Dimensional_tables)
 5. [Installation](#Installation)
