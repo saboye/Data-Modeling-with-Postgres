@@ -61,14 +61,16 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Metadata</a></li>
+      </ul>
+      <ul>
+        <li><a href="#built-with">Metadata</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -89,19 +91,60 @@ In this project, I am creating a database schema using a Postgre Relational data
 
 ![](images/screenshot.jpg)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
-
-### Built With
-
-* []()
-* []()
-* []()
 
 
 
+####  List of Tables 
+
+ |     Name         |     Type      |  Small | Medium |   Big  | Description  |
+ |----------------- |---------------|--------|--------|--------|--------------|
+ | aircrafts        | table         |  16 kB |  16 kB |  16 kB | Aircraft     |
+ | airports         | table         |  48 kB |  48 kB |  48 kB | Airports     |
+ | boarding_passes  | table         |  31 MB | 102 MB | 427 MB | Boarding passes|
+ | bookings         | table         |  13 MB |  30 MB | 105 MB | Bookings       |
+ | flights          | table         |   3 MB |   6 MB |  19 MB | Flights        |
+ | flights_v        | view          |   0 kb |   0 kB |   0 kB | Flights        |
+ | routes           | mat. view     | 136 kB | 136 kB | 136 kB | Routes         |
+ | seats            | table         |  88 kB |  88 kB |  88 kB | Seats          |
+ | ticket_flights   | table         |  64 MB | 145 MB | 516 MB | Flight segments|
+ | tickets          | table         |  47 MB | 107 MB | 381 MB | Tickets        |
+
+
+### Metadata
+##### Table bookings.aircrafts_data
+
+| Column     |  Type   | Modifiers    |             Description |
+|------------|---------|--------------|-------------------------- |
+|aircraft_code | char(3) | NOT NULL     | Aircraft code, IATA|
+|model         | text    | NOT NULL     | Aircraft model|
+|range         | integer | NOT NULL     | Maximal flying distance, km|
+
+##### Table bookings.airports
+|  Column     |  Type   | Modifiers    |           Description|
+| ------------| --------|--------------|-----------------------------|
+|airport_code | char(3) | NOT NULL     | Airport code |
+|airport_name | text    | NOT NULL     | Airport name |
+|city         | text    | NOT NULL     | City |
+|longitude    | float   | NOT NULL     | Airport coordinates: longitude |
+|latitude     | float   | NOT NULL     | Airport coordinates: latitude |
+|timezone     | text    | NOT NULL     | Airport time zone |
+
+`The coordinates of the longitude and latitude have been transformed to point data type in the table. Here is the function to convert the longitude and latitude to point. `
+
+```sh
+--Return point with unknown SRID
+SELECT ST_MakePoint(-71.1043443253471, 42.3150676015829);
+
+--Return point marked as WGS 84 long lat
+SELECT ST_SetSRID(ST_MakePoint(-71.1043443253471, 42.3150676015829),4326);
+
+result
+-------
+1.5
+
+For geodetic coordinates, X is longitude and Y is latitude
+
+```
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -117,16 +160,18 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+1. Install Postgres from here 
+    https://www.postgresql.org/download/
 
-
+2. Clone the repo
+   ```sh
+   git clone https://github.com/saboye/Data-Modeling-with-Postgres.git
+   ```
+  
+3. Importing the database using `psql` 
+   ```sh
+   psql -h localhost -d DATABASE -U postgres -f {FILE PATH}booking.sql
+   ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
