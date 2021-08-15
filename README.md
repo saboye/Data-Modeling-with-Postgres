@@ -36,7 +36,7 @@
 1. [About The Project](#About_The_Project)
 2. [List of Tables](#List_of_Tables)
 3. [Metadata](#Metadata)
-4. [Fact and Dimensional tables]("Fact_and_Dimensional_tables")
+4. [Fact and Dimensional tables](#Fact_and_Dimensional_tables)
 5. [Installation](#Installation)
 6. [License](#License)
 7. [Contact]("#Contact")
