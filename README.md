@@ -202,7 +202,7 @@ Project Link: [https://github.com/saboye/Data-Modeling-with-Postgres](https://gi
 ## Acknowledgements <a name="Acknowledgements"></a>
 
 * [https://www.postgresql.org/](https://www.postgresql.org/)
-* https://www.antwak.com/](https://www.antwak.com/)
+* [https://www.antwak.com/](https://www.antwak.com/)
 * [https://postgrespro.com/docs/postgrespro/9.6/apjs04](https://postgrespro.com/docs/postgrespro/9.6/apjs04)
 * [https://postgrespro.com/docs/postgrespro/9.6/apjs04](https://postgrespro.com/docs/postgrespro/9.6/apjs04)
 * [https://www.postgresqltutorial.com/](https://www.postgresqltutorial.com/)
