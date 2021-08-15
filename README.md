@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/saboye/Data-Modeling-with-Postgrese">
-    <img src="images/POSTGRESS.png" alt="Logo" width="80" height="80">
+    <img src="images/postgress.png" alt="Logo" width="180" height="180">
   </a>
 
   <h3 align="center">Data Modeling with Postgres</h3>
