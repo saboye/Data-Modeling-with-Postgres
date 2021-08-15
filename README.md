@@ -36,10 +36,11 @@
 1. [About The Project](#About_The_Project)
 2. [List of Tables](#List_of_Tables)
 3. [Metadata](#Metadata)
-4. [Installation](#Installation)
-5. [License](#License)
-6. [Contact]("#Contact")
-7. [Acknowledgements](#Acknowledgements)
+4. [Fact and Dimensional tables]("Fact_and_Dimensional_tables")
+5. [Installation](#Installation)
+6. [License](#License)
+7. [Contact]("#Contact")
+8. [Acknowledgements](#Acknowledgements)
 
 
 
@@ -167,6 +168,9 @@ For geodetic coordinates, X is longitude and Y is latitude
 | contact_data   | jsonb       |              | Passenger contact information|
 
 <!-- GETTING STARTED -->
+## Fact and Dimensional tables.<a name="Fact_and_Dimensional_tables"></a>
+The following entity-relationship diagram shows a star schema optimized for queries created using the flight booking database. 
+![](images/screenshot.jpg)
 
 ## Installation <a name="Installation"></a>
 
