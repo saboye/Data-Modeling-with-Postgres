@@ -9,6 +9,17 @@
 *** To avoid retyping too much info. Do a search and replace for the following:
 *** github_username, repo_name, twitter_handle, email, project_title, project_description
 -->
+![GitHub contributors](https://img.shields.io/github/contributors/saboye/Data-Modeling-with-Postgres?color=blue&logo=github&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/saboye/Data-Modeling-with-Postgres?logo=github&style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues-raw/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/saboye/Data-Modeling-with-Postgres?style=for-the-badge)
+
+
+
+
+
 
 
 
@@ -20,12 +31,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
