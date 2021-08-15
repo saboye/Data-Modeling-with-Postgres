@@ -114,6 +114,55 @@ For geodetic coordinates, X is longitude and Y is latitude
  | flight_id   | integer    | NOT NULL     | Flight ID|
  | boarding_no | integer    | NOT NULL     | Boarding pass number|
  |  seat_no     | varchar(4) | NOT NULL     | Seat number |
+ 
+ #### Table bookings.bookings
+  |  Column     |      Type     | Modifiers    |         Description|
+ |-------------|---------------|-------------- |---------------------------|
+ | book_ref     | char(6)       | NOT NULL     | Booking number|
+ | book_date    | timestamptz   | NOT NULL     | Booking date|
+ | total_amount | numeric(10,2) | NOT NULL     | Total booking cost|
+ 
+ 
+ #### Table bookings.flights
+ |    Column      |     Type    | Modifiers    |         Description     |
+|----------------|-------------|--------------|-------------------------|
+| flight_id           | serial      | NOT NULL     | Flight ID|
+| flight_no           | char(6)     | NOT NULL     | Flight number|
+| scheduled_departure | timestamptz | NOT NULL     | Scheduled departure time|
+| scheduled_arrival   | timestamptz | NOT NULL     | Scheduled arrival time|
+| departure_airport   | char(3)     | NOT NULL     | Airport of departure|
+| arrival_airport     | char(3)     | NOT NULL     | Airport of arrival|
+| status              | varchar(20) | NOT NULL     | Flight status|
+| aircraft_code       | char(3)     | NOT NULL     | Aircraft code, IATA|
+| actual_departure    | timestamptz |              | Actual departure time |
+| actual_arrival      | timestamptz |              | Actual arrival time|
+
+
+#### Table bookings.seats
+|      Column     |     Type    | Modifiers    |      Description  |
+|-----------------|-------------|-------------|--------------------|
+| aircraft_code   | char(3)     | NOT NULL     | Aircraft code, IATA
+| seat_no         | varchar(4)  | NOT NULL     | Seat number|
+|fare_conditions | varchar(10) | NOT NULL     | Travel class|
+
+
+#### Table bookings.ticket_flights
+
+|    Column      |     Type      | Modifiers    |    Description |
+|-----------------|---------------|--------------|-----------------|
+| ticket_no       | char(13)      | NOT NULL     | Ticket number |
+| flight_id       | integer       | NOT NULL     | Flight ID  |
+| fare_conditions | varchar(10)   | NOT NULL     | Travel class |
+| amount          | numeric(10,2) | NOT NULL     | Travel cost |
+
+#### Table bookings.tickets
+|    Column     |     Type    | Modifiers    |          Description |
+|--------------|------------|-------------|-------------------------|
+| ticket_no      | char(13)    | NOT NULL     | Ticket number|
+| book_ref       | char(6)     | NOT NULL     | Booking number|
+| passenger_id   | varchar(20) | NOT NULL     | Passenger ID|
+| passenger_name | text        | NOT NULL     | Passenger name|
+| contact_data   | jsonb       |              | Passenger contact information|
 
 <!-- GETTING STARTED -->
 
