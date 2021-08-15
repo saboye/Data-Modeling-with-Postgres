@@ -187,7 +187,7 @@ For geodetic coordinates, X is longitude and Y is latitude
 <!-- LICENSE -->
 ## License <a name="License"></a>
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/saboye/Data-Modeling-with-Postgres/blob/master/LICENSE.txt) for more information.
 
 <!-- CONTACT -->
 ## Contact <a name="Contact"></a>
